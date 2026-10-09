@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Himel Mahmud — CSE student, software developer and ML enthusiast. Official portfolio.">
+<title>HIMEL MAHMUD — PORTFOLIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="scan"></div>
+<header class="hud">
+  <a class="logo" href="#home"><span>H</span>IMEL<span class="accent">.EXE</span></a>
+  <nav><a href="#home">HOME</a><a href="#ask">AI ASSISTANT</a><a href="#projects">PROJECTS</a><a href="#skills-section">SKILLS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+  <button id="menu">☰</button>
+</header>
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg"><span></span><span></span><span></span></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><i></i> PORTFOLIO</div>
+    <h1>HIMEL<br><em>MAHMUD</em></h1>
+    <p class="tagline">CSE STUDENT · SOFTWARE DEVELOPER · ML ENTHUSIAST</p>
+    <p class="intro">Passionate about software development and machine learning. I build Android, web and console applications using Python, Java and C/C++ — and I'm eager to learn and contribute as an intern or junior developer.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">VIEW PROJECTS</a>
+      <button class="btn" id="randomMission">RANDOM PROJECT ↗</button>
+    </div>
+    <div class="stats">
+      <div><b id="xp">0</b><small>PROJECTS VIEWED</small></div>
+      <div><b>05</b><small>PROJECTS</small></div>
+      <div><b>08</b><small>SKILLS</small></div>
+    </div>
+  </div>
+  <div class="character-stage">
+    <div class="orb"></div>
+    <div class="ring ring1"></div><div class="ring ring2"></div>
+    <div class="avatar-big">H</div>
+    <div class="float-card c1">CSE<br><small>FIELD OF STUDY</small></div>
+    <div class="float-card c2">JUNIOR<br><small>DEVELOPER</small></div>
+    <span class="drag-hint" id="dragHint">⟲ DRAG TO SPIN ⟳</span>
+    <div class="float-card c3">BUILDING<br><small>CURRENTLY</small></div>
+  </div>
+</section>
+<section class="ticker"><span>AVAILABLE FOR WORK</span><span>BUILDING SOFTWARE</span><span>LEARNING EVERY DAY</span></section>
+<section id="ask" class="section terminal-section">
+  <div class="section-head"><div><h2>ASK ME ANYTHING</h2></div><span class="hint">POWERED BY GEMINI</span></div>
+  <div class="terminal">
+    <div class="terminal-top"><span>HIMEL@PORTFOLIO:~$</span><span>● ● ●</span></div>
+    <div id="terminalText"></div>
+    <form class="term-form" id="termForm"><label>visitor@himel:~$</label><input id="termInput" autocomplete="off" placeholder="ask about my projects, skills, education…" maxlength="300"><span class="cursor">█</span></form>
+    <div class="chips"><button>What projects have you built?</button><button>What are your skills?</button><button>Are you open to internships?</button><button>How can I contact you?</button></div>
+  </div>
+</section>
+<section id="projects" class="section missions">
+  <div class="section-head"><div><h2>PROJECTS</h2></div><span class="hint">CLICK A PROJECT TO VIEW DETAILS</span></div>
+  <div class="mission-grid" id="projectGrid"></div>
+</section>
+<section id="skills-section" class="section loadout">
+  <div class="section-head"><div><h2>SKILLS</h2></div><span class="hint">LANGUAGES, FRAMEWORKS & TOOLS</span></div>
+  <div class="loadout-grid">
+    <div class="core-card">
+      <div class="core-icon">H</div>
+      <h3>CORE STRENGTHS</h3>
+      <p>Hands-on with Android, web and console apps, backend development, data handling and machine learning basics — learned by shipping real projects.</p>
+    </div>
+    <div class="skills" id="skills"></div>
+  </div>
+</section>
+<section id="about" class="section profile">
+  <div class="section-head"><div><h2>ABOUT ME</h2></div><span class="hint">CLICK EDUCATION OR AWARD TO VIEW RECORDS</span></div>
+
+  <div class="about-card">
+    <div class="about-photo" id="aboutPhoto"><span>H</span></div>
+    <div class="about-text">
+      <span class="kicker">PROFILE</span>
+      <h3>HIMEL MAHMUD</h3>
+      <p>I'm a Computer Science and Engineering student at Bangladesh University of Business and Technology in Dhaka. I'm passionate about software development and machine learning, and I learn by building: Android, web and console applications in Python, Java and C/C++, with hands-on work in data handling, backend development and ML basics.</p>
+      <p>Outside the classroom I served as an Executive Member of the BASIS Student Forum of BUBT, helping run the BUBT Inter-University Programming Contest (BIUPC). I'm now looking for an internship or junior developer role where I can keep learning and contribute.</p>
+      <div class="data-row"><span>ROLE</span><b>DEVELOPER</b></div>
+      <div class="data-row"><span>LOCATION</span><b>DHAKA, BANGLADESH</b></div>
+      <div class="data-row"><span>STATUS</span><b class="green">OPEN TO WORK</b></div>
+    </div>
+  </div>
+  <div class="profile-grid">
+    <div class="profile-panel click" id="recordPanel">
+      <span class="kicker">EDUCATION</span>
+      <h3>B.Sc. IN CSE</h3>
+      <p>Bangladesh University of Business and Technology, Dhaka</p>
+      <div class="data-row"><span>JAN 2024</span><b>START</b></div>
+      <div class="data-row"><span>PRESENT</span><b>ONGOING</b></div>
+      <span class="view">VIEW ACADEMIC RECORD ▸</span>
+    </div>
+    <div class="profile-panel">
+      <span class="kicker">EXPERIENCE</span>
+      <h3>EXECUTIVE MEMBER</h3>
+      <p>BASIS Student Forum of BUBT. Helped organize BIUPC (BUBT Inter-University Programming Contest) — event logistics and coordination with the executive team.</p>
+      <div class="data-row"><span>JUN 2024 – APR 2026</span><b>DHAKA, BD</b></div>
+    </div>
+    <div class="profile-panel">
+      <span class="kicker">ACHIEVEMENTS</span>
+      <h3>CERTIFICATIONS</h3>
+      <p>Recognised for academic performance at university.</p>
+      <div class="achievement" id="awardBtn">★ DEAN'S AWARD — FALL 2025 · CLICK TO VIEW</div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div>
+    <span class="kicker">GET IN TOUCH</span>
+    <h2>LET'S BUILD<br>SOMETHING.</h2>
+  </div>
+  <div class="contact-list">
+    <a href="mailto:xeophemn.official@gmail.com"><small>EMAIL</small><b>xeophemn.official@gmail.com</b></a>
+    <a href="tel:+8801518907160"><small>MOBILE</small><b>+880 1518-907160</b></a>
+    <a href="https://linkedin.com/in/himelmahmud01" target="_blank" rel="noopener"><small>LINKEDIN ↗</small><b>linkedin.com/in/himelmahmud01</b></a>
+    <a href="https://github.com/himel-official" target="_blank" rel="noopener"><small>GITHUB ↗</small><b>github.com/himel-official</b></a>
+  </div>
+</section>
+</main>
+<footer><span>HIMEL.EXE</span><span>DESIGNED & BUILT BY HIMEL MAHMUD</span><span>© 2026</span></footer>
+<div id="modal" class="modal"><div class="modal-box"><button id="close">×</button><div id="modalContent"></div></div></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
