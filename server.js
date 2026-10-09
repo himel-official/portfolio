@@ -9,7 +9,7 @@ const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash-lite";
 
 app.disable("x-powered-by");
 app.use(express.json({ limit: "16kb" }));
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Small in-memory rate limit to discourage accidental or abusive API usage.
 // Free hosting may restart the service, which resets this counter.
